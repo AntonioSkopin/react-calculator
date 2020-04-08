@@ -1,38 +1,76 @@
+body {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    rgb(29, 29, 29) 000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.calc-body {
+  max-width: 400px;
+  margin: auto;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.result {
+  height: 60px;
+  background-color: rgb(82, 82, 82);
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result p {
+  font-size: 40px;
+}
+
+.buttons {
+  display: block;
+}
+
+.buttons button {
+  width: 25%;
+  height: 60px;
+  font-size: 30px;
+  background-color: rgb(65, 65, 65);
+  border: 1px solid #333;
+  color: #fff;
+}
+
+button:hover {
+  background-color: rgb(88, 88, 88);
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+#bttn {
+  background-color: tomato;
+}
+
+#zero {
+  width: 50%;
+}
+
+#modes {
+  background-color: rgb(94, 94, 94);
+}
+
+#modes:hover {
+  background-color: rgb(65, 65, 65);
+}
+
+#reset,
+#backspace {
+  background-color: tomato;
 }
